@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Shadow';
+    src: url('/fonts/Shadow-Regular.eot');
+    src: url('/fonts/Shadow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Shadow-Regular.woff2') format('woff2'),
+        url('/fonts/Shadow-Regular.woff') format('woff'),
+        url('/fonts/Shadow-Regular.ttf') format('truetype'),
+        url('/fonts/Shadow-Regular.svg#Shadow-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

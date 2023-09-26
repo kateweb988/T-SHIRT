@@ -1,0 +1,160 @@
+body
+   font-family: 'Montserrat', sans-serif
+   background: #F4F4F3
+   font-weight: 400
+   font-size: 16px
+   letter-spacing: 0.16px
+   line-height: normal
+   color: $black
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $green
+.container
+   padding: 0 15px
+   max-width: 1203px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px !important
+   @media (max-width: 991px)
+      max-width: 720px !important
+   @media (max-width: 767px)
+      max-width: 540px !important
+.d-flex, .q
+   display: flex
+   align-items: initial
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   margin: 0
+   font-family: 'Unbounded', cursive
+   font-weight: 700
+   line-height: 130%
+   font-size: 114px
+   letter-spacing: 1.14px
+h2 
+   margin: 0
+   font-size: 32px
+   font-style: normal
+   font-weight: 600
+   line-height: normal
+   font-family: 'Unbounded', cursive
+   letter-spacing: 0.32px
+.green 
+   color: $green
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $green !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $green !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path, rect
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $green
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $green
+   border-radius: 6px
+.tabs__nav, .menu4.active
+   scrollbar-width: thin
+   scrollbar-color: blue transparent
+.tabs__nav::-webkit-scrollbar,
+.menu4.active::-webkit-scrollbar
+   height: 0px
+   width: 0px
+.tabs__nav::-webkit-scrollbar-track,
+.menu4.active::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+.tabs__nav::-webkit-scrollbar-thumb,
+.menu4.active::-webkit-scrollbar-thumb 
+   background-color: transparent
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   border-radius: 200px
+   background-color: $green
+   border: 1px solid $green
+   font-weight: 800
+   height: 52px
+   width: 330px
+   font-size: 16px
+   font-style: normal
+   font-weight: 500
+   line-height: normal
+   letter-spacing: 0.16px
+   text-transform: uppercase
+   font-family: 'Unbounded', cursive
+   color: $black
+   &:hover 
+      background: transparent 
+      border: 1px solid $green
+      color: $green
+   &_2 
+      background: $black
+      color: white
+      border: 1px solid $black
+      &:hover 
+         background: $black
+         border: 1px solid $black
+   &_3 
+      border: 1px solid $black
+      background: transparent
+      &:hover 
+         background: $black
+         border: 1px solid $black
