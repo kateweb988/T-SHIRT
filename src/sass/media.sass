@@ -5,12 +5,20 @@
    .plug:after 
       width: 56.5%
 @media screen and (max-width: 1199px)
+   .nav__box 
+      min-height: inherit
+   .new
+      width: 1200px
+   .new__row_1
+      bottom: -5px
+   .new__row_2
+      bottom: 239px
    .menu-btn 
       width: 30px
       height: 30px
       position: absolute
       left: 0px
-      top: 3px
+      top: 23px
       z-index: 11
       overflow: hidden
       display: flex
@@ -618,15 +626,24 @@
          height: 41px
    .main .accordeon, .main .accordeon2, .main .accordeon3, .main .accordeon4
       margin-right: 0
-      margin-bottom: 30px
+      margin-bottom: 10px
       width: 100%
+      border-radius: 0px
+      border: none !important
+      padding: 0
+      height: auto
    .main .accordeon__panel, .main .accordeon__panel2, .main .accordeon__panel3, .main .accordeon__panel4
       position: relative 
+      top: 0
       max-height: inherit !important
    .main .panel__text, .main .panel__text2, .main .panel__text3, .main .panel__text4
       padding: 0 !important
       margin: 20px 0 !important
       height: auto
+      width: auto
+   .main .accordeon__button p, .main .accordeon__button2 p, .main .accordeon__button3 p, .main .accordeon__button4 p, .main .accordeon__button5 p, .main .accordeon__button6 p
+      opacity: 1
+      font-weight: 600
    .main .accordeon_1 .panel__text
       height: 70px
    .main .accordeon_1 .panel__text
@@ -874,9 +891,13 @@
       width: 130px
    .nav__box
       padding-left: 76px
+      .header--lang
+         margin-left: 0
    .plug__info
       right: 6px
       position: relative
+   .header--lang .plug__info
+      right: 15px
    .plug__shop:after 
       width: 13px
       right: -24px
@@ -1029,9 +1050,24 @@
       letter-spacing: 0.14px
       opacity: 0.7
    .about__fig 
-      width: 186%
+      width: 100%
       position: relative
       left: -116px
+      margin-top: 40px
+   .new__row_2
+      transform: rotate(-8deg)
+      z-index: 2
+      bottom: 320px
+      p
+         font-size: 10px
+         margin-right: 15px
+   .new__row_1
+      z-index: 2
+      bottom: -15px
+      transform: rotate(8deg)
+      img
+         width: 67px
+         margin-right: 15px
    .about__img
       width: 100%
    .about__sub, .about__item h2
@@ -1419,5 +1455,7 @@
       border-radius: 0px
       background: transparent !important
       -webkit-appearance: none
+   .new
+      width: 600px
   
 

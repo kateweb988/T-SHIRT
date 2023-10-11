@@ -134,7 +134,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
 .pop__top
    align-items: center
    justify-content: flex-start
-   margin: 20px 0 20px 67px
+   margin: 20px 0 20px 63px
 .custom-checkbox+label 
    display: flex
    align-items: center
@@ -872,6 +872,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
    &__box 
       align-items: center
       justify-content: space-between
+      min-height: 58px
    &__logo 
       width: 164px
       img 
@@ -903,13 +904,24 @@ input:-moz-placeholder, textarea:-moz-placeholder
    .accordeon, .accordeon2, .accordeon3, .accordeon4
       padding: 0
       margin: 0
-      margin-right: 100px
+      margin-right: 22px
       position: relative
-      border: none
-      width: max-content
+      border-radius: 10px
+      width: 200px
+      background: #FEFDFB
+      height: 44px
+      border: 1px solid transparent
+      transition: 0.5s
+      display: flex
+      align-items: center
+      padding: 0 20px
+      .accordeon-container
+         width: 100%
+      &:hover 
+         border: 1px solid $green
    .accordeon__panel, .accordeon__panel2, .accordeon__panel3, .accordeon__panel4
       position: absolute
-      top: 10px
+      top: 23px
       left: 0px
       z-index: 2
    .panel__text, .panel__text2, .panel__text3, .panel__text4
@@ -923,15 +935,15 @@ input:-moz-placeholder, textarea:-moz-placeholder
    .accordeon__button:after, .accordeon__button2:after, .accordeon__button3:after, .accordeon__button4:after, .accordeon__button5:after, .accordeon__button6:after 
       content: ""
       position: absolute
-      right: -31px
+      right: -8px
       background: url(/img/pol.svg) no-repeat !important
-      width: 20px
+      width: 12px
       left: inherit
-      height: 20px
+      height: 11px
       top: 9px
       bottom: inherit
       margin-bottom: -20px
-      transition: all 0.5s ease
+      transition: all 0.3s ease
    .calc__item
       &:last-child
          .custom-checkbox + label
@@ -939,31 +951,36 @@ input:-moz-placeholder, textarea:-moz-placeholder
    .accordeon__button.active:after, .accordeon__button2.active:after, .accordeon__button3.active:after, .accordeon__button4.active:after, .accordeon__button5.active:after, .accordeon__button6.active:after
       content: ""
       position: absolute
-      right: -22px
+      right: -8px
       background: url(/img/pol.svg) no-repeat !important
-      width: 20px
+      width: 12px
       left: inherit
-      height: 20px
-      top: -7px
+      height: 11px
+      top: 2px
       bottom: inherit
       margin-bottom: -20px
-      transition: all 0.5s ease
+      transition: all 0.3s ease
       transform: rotate(180deg)
       -webkit-transform: rotate(180deg)
    .accordeon__button, .accordeon__button2, .accordeon__button3, .accordeon__button4, .accordeon__button5, .accordeon__button6
-      width: max-content
+      width: 100%
       text-align: left
       border: none
       cursor: pointer
       position: relative
       transition: all 0.5s ease
-      color: $black
-      font-size: 16px
-      font-weight: 600
       z-index: 3
       line-height: normal
       display: flex
       justify-content: space-between
+      p 
+         color: #282622 !important
+         font-size: 16px
+         font-style: normal
+         font-weight: 400
+         line-height: normal
+         letter-spacing: 0.16px
+         opacity: 0.4
    .sliders_control
       order: 2
       margin-top: 24px
@@ -1143,7 +1160,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
    &__item 
       position: relative
       width: 32%
-      height: 341px
+      height: auto
       overflow: hidden
       padding: 20px
       margin-bottom: 30px
@@ -1155,7 +1172,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
       object-fit: cover
    &__like 
       position: absolute
-      bottom: 105px
+      top: 196px
       right: 30px
       width: 40px
       height: 40px
@@ -1180,6 +1197,8 @@ input:-moz-placeholder, textarea:-moz-placeholder
    &__name 
       font-family: 'Unbounded', cursive
       color: $black
+      width: 100%
+      max-width: 196px
    &__sum 
       font-family: 'Unbounded', cursive
       font-size: 20px
@@ -2949,7 +2968,10 @@ input[type=number]::-webkit-outer-spin-button
          min-height: 779px 
          min-width: 480px
          top: 313px
+         left: 100%
          cursor: inherit
+         &:before 
+            left: 22%
    &--subitem
       transition: transform .1s
       @media( min-width: 1001px )
@@ -3239,3 +3261,56 @@ input[type="number"]
       display: none
    &__btn
       display: none
+.marquee
+   width: 100%
+   white-space: nowrap
+   display: flex
+   -webkit-animation: marquee 100s infinite linear
+   animation: marquee 100s infinite linear
+   align-items: center
+   // p 
+   //    font-weight: 900
+   //    font-size: 117px
+   //    line-height: 72px
+   //    text-transform: uppercase
+   //    color: #2A2D32
+   //    display: inline-block
+@-webkit-keyframes marquee 
+   0%
+      -webkit-transform: translate(-50%, 0)
+   100%
+      -webkit-transform: translate(100%, 0)
+.new__row_1 
+   white-space: nowrap
+   align-items: center
+   transform: rotate(4deg)
+   position: absolute
+   bottom: 57px
+   left: 0
+   img 
+      width: 108px
+      margin-right: 30px
+.new__row_2 
+   white-space: nowrap
+   align-items: center
+   transform: rotate(-4deg)
+   position: absolute
+   bottom: 251px
+   left: 0
+   p 
+      white-space: nowrap
+      font-family: 'Unbounded', cursive
+      font-size: 16px
+      font-style: normal
+      font-weight: 700
+      line-height: 150%
+      letter-spacing: 0.16px
+      color: $green
+      margin-right: 30px   
+.new 
+   position: relative
+   width: 1920px
+   margin: 0 auto
+   overflow: hidden
+   &__flex
+      animation: marquee 200s infinite linear
