@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -1923,10 +1924,14 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   .his__content {
     align-items: center; }
     .his__content img {
-      margin-right: 10px; }
+      margin-left: 10px;
+      order: 2;
+      position: relative;
+      top: -1.5px; }
     .his__content p {
       letter-spacing: 0.16px;
-      opacity: 0.9; }
+      opacity: 0.9;
+      order: 1; }
   .his__sub {
     letter-spacing: 0.16px;
     opacity: 0.9; }
@@ -2147,6 +2152,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
       margin-bottom: 20px;
       width: 100%;
       border-radius: 10px;
+      color: white;
       font-size: 16px;
       background: rgba(254, 253, 251, 0.1);
       max-width: 100%;
@@ -3349,16 +3355,6 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: normal;
   letter-spacing: 0.24px; }
 
-.enter .reg__wrap {
-  pointer-events: none;
-  opacity: 0.2;
-  z-index: 0; }
-
-.enter .reg__enter {
-  opacity: 1;
-  pointer-events: inherit;
-  z-index: 2; }
-
 .header--lang {
   position: relative;
   display: flex;
@@ -3816,6 +3812,77 @@ input[type="number"] {
   overflow: hidden; }
   .new__flex {
     animation: marquee 200s infinite linear; }
+
+.order__promo.error input {
+  border: 1px solid #F00 !important;
+  color: #F00;
+  background: url(/img/none.svg) no-repeat 97% 53%;
+  background-color: white; }
+
+.order__promo.error:after {
+  content: "Данный промокод не действителен";
+  display: block;
+  position: relative;
+  color: #F00;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  opacity: 0.7;
+  z-index: 2;
+  margin: -5px 0 25px; }
+
+.order__promo.check input {
+  border: 1px solid #53E559 !important;
+  color: #53E559;
+  background: url(/img/yes.svg) no-repeat 97% 53%;
+  background-color: white; }
+
+.enter .ww {
+  cursor: pointer; }
+
+.enter .reg__wrap {
+  pointer-events: none;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: inherit;
+  transition: 0.5s; }
+  .enter .reg__wrap form {
+    pointer-events: none; }
+  .enter .reg__wrap.active {
+    opacity: 1;
+    pointer-events: inherit;
+    z-index: 2;
+    animation: move1 1s; }
+    .enter .reg__wrap.active form {
+      pointer-events: inherit; }
+
+.enter .reg__enter {
+  pointer-events: inherit;
+  transition: 0.5s;
+  position: relative; }
+  .enter .reg__enter form, .enter .reg__enter .reg__socials {
+    pointer-events: none; }
+  .enter .reg__enter.active {
+    opacity: 1;
+    pointer-events: inherit;
+    z-index: 2;
+    animation: move2 1s; }
+    .enter .reg__enter.active form, .enter .reg__enter.active .reg__socials {
+      pointer-events: inherit; }
+
+@-webkit-keyframes move1 {
+  0% {
+    left: -70px; }
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes move2 {
+  0% {
+    left: 20px; }
+  100% {
+    left: -34px; } }
 
 @media screen and (max-width: 1700px) {
   .plug:after {
@@ -4938,7 +5005,7 @@ input[type="number"] {
     font-size: 14px;
     letter-spacing: 0.14px; }
   .his__content img {
-    margin-right: 7px;
+    margin-left: 7px;
     width: 16px;
     height: 16px; }
   .his {
@@ -5264,4 +5331,8 @@ input[type="number"] {
     background: transparent !important;
     -webkit-appearance: none; }
   .new {
-    width: 600px; } }
+    width: 600px; }
+  .order__promo.error:after {
+    font-size: 14px; }
+  .reg__enter.active {
+    animation: inherit !important; } }

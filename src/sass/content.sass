@@ -1511,10 +1511,14 @@ input:-moz-placeholder, textarea:-moz-placeholder
    &__content 
       align-items: center
       img 
-         margin-right: 10px
+         margin-left: 10px
+         order: 2
+         position: relative
+         top: -1.5px
       p 
          letter-spacing: 0.16px
          opacity: 0.9
+         order: 1
    &__sub 
       letter-spacing: 0.16px
       opacity: 0.9
@@ -1734,6 +1738,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
          margin-bottom: 20px
          width: 100%
          border-radius: 10px
+         color: white
          font-size: 16px
          background: rgba(254, 253, 251, 0.10)
          max-width: 100%
@@ -2863,15 +2868,6 @@ input[type=number]::-webkit-outer-spin-button
       font-weight: 600
       line-height: normal
       letter-spacing: 0.24px
-.enter 
-   .reg__wrap
-      pointer-events: none
-      opacity: 0.2
-      z-index: 0
-   .reg__enter
-      opacity: 1
-      pointer-events: inherit
-      z-index: 2
 .header--lang 
    position: relative
    display: flex
@@ -3314,3 +3310,70 @@ input[type="number"]
    overflow: hidden
    &__flex
       animation: marquee 200s infinite linear
+.order__promo 
+   &.error
+      input 
+         border: 1px solid #F00 !important
+         color: #F00
+         background: url(/img/none.svg) no-repeat 97% 53%
+         background-color: white
+      &:after 
+         content: "Данный промокод не действителен"
+         display: block
+         position: relative
+         color:#F00
+         font-size: 20px
+         font-style: normal
+         font-weight: 400
+         line-height: normal
+         letter-spacing: 0.2px
+         opacity: 0.7
+         z-index: 2
+         margin: -5px 0 25px
+   &.check 
+      input
+         border: 1px solid #53E559 !important
+         color: #53E559
+         background: url(/img/yes.svg) no-repeat 97% 53%
+         background-color: white
+.enter 
+   .ww 
+      cursor: pointer
+   .reg__wrap
+      pointer-events: none
+      opacity: 0.2
+      z-index: 0
+      pointer-events: inherit
+      transition: 0.5s
+      form 
+         pointer-events: none
+      &.active
+         opacity: 1
+         pointer-events: inherit
+         z-index: 2
+         animation: move1 1s 
+         form 
+            pointer-events: inherit
+   .reg__enter
+      pointer-events: inherit
+      transition: 0.5s
+      position: relative
+      form, .reg__socials
+         pointer-events: none
+      &.active
+         opacity: 1
+         pointer-events: inherit
+         z-index: 2
+         animation: move2 1s 
+         form, .reg__socials 
+            pointer-events: inherit
+@-webkit-keyframes move1
+   0%
+      left: -70px
+   100%
+      left: 0
+@-webkit-keyframes move2
+   0%
+      left: 20px
+   100%
+      left: -34px

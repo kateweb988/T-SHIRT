@@ -51,6 +51,46 @@ document.addEventListener("DOMContentLoaded", () => {
   // инициализация .tabs как табов
   new ItcTabs('.tabs');
 });
+// document.addEventListener("DOMContentLoaded", () => {
+//   let test = document.querySelectorAll('.ww'); // Возвращает список элементов
+//   let lastClicked = test[0]; // Первый элемент из списка (счет начинается с нуля)
+
+//   for (let i = 0; i < test.length; i++) {
+//     // Цикл берет и кругами выполняет код. На каждом круге, i является конкретным числом.
+//     // Добавляется событие 'клик' на test[0], потом test[1], test[2]...
+//     test[i].addEventListener('click', function () {
+//       lastClicked.classList.remove('active');
+//       this.classList.add('active');
+//       // Убрали класс с предыдущего кликнутого элемента, добавили на текущий
+
+//       lastClicked = this;
+//       // Обновили значение переменной - теперь она ссылается на текущий элемент. 
+//       // Чтобы на следующем клике, убрать класс уже с этого.
+//     });
+//   }
+// });
+document.addEventListener("DOMContentLoaded", () => {
+  const loc_box = $('.reg__wrap');
+  $('.reg__wrap').click(function () {
+    loc_box.addClass('active');
+    $('.reg__enter').removeClass('active');
+    $('.state_wrap').addClass('hidden');
+    $(this).toggleClass('selected');
+    $(this).removeClass('hidden');
+  });
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const loc_box2 = $('.reg__enter');
+  $('.reg__enter').click(function () {
+    loc_box2.addClass('active');
+    $('.reg__wrap').removeClass('active');
+    $('.state_wrap').addClass('hidden');
+    $(this).toggleClass('selected');
+    $(this).removeClass('hidden');
+  });
+
+});
 document.addEventListener("DOMContentLoaded", () => {
   function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
     const [from, to] = getParsed(fromInput, toInput);
