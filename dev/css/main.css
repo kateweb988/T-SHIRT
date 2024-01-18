@@ -338,8 +338,8 @@ html *::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'Shadow';
-  src: url("/fonts/Shadow-Regular.eot");
-  src: url("/fonts/Shadow-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Shadow-Regular.woff2") format("woff2"), url("/fonts/Shadow-Regular.woff") format("woff"), url("/fonts/Shadow-Regular.ttf") format("truetype"), url("/fonts/Shadow-Regular.svg#Shadow-Regular") format("svg");
+  src: url("../fonts/Shadow-Regular.eot");
+  src: url("../fonts/Shadow-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Shadow-Regular.woff2") format("woff2"), url("../fonts/Shadow-Regular.woff") format("woff"), url("../fonts/Shadow-Regular.ttf") format("truetype"), url("../fonts/Shadow-Regular.svg#Shadow-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -518,7 +518,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   transition: 0.2s;
   width: 20px;
   height: 20px;
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #ffffff;
   max-width: 20px;
   margin-right: 14px;
@@ -527,7 +527,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   border: 1px solid #282622; }
 
 .custom-checkbox:checked + label::before {
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: #282622;
   border: 1px solid #282622; }
 
@@ -669,7 +669,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   height: 12px;
   text-align: center;
   vertical-align: top;
-  background: url(/img/down-arr.svg) no-repeat !important;
+  background: url(../img/down-arr.svg) no-repeat !important;
   position: absolute;
   right: 19px;
   top: 33px; }
@@ -840,7 +840,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down.png) no-repeat !important;
+  background: url(../img/down.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -853,7 +853,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   content: "";
   position: absolute;
   right: 0px;
-  background: url(/img/down.png) no-repeat !important;
+  background: url(../img/down.png) no-repeat !important;
   width: 7px;
   left: inherit;
   height: 5px;
@@ -990,7 +990,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         position: absolute;
         right: -26px;
         bottom: -1px;
-        background: url(/img/un1.png) no-repeat; }
+        background: url(../img/un1.png) no-repeat; }
     .plug__block:nth-child(2) {
       background: #FFFDF9;
       color: #282622;
@@ -1012,7 +1012,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         position: absolute;
         left: -17px;
         bottom: -13px;
-        background: url(/img/un2.png) no-repeat; }
+        background: url(../img/un2.png) no-repeat; }
     .plug__block:nth-child(4) {
       margin-left: auto;
       margin-right: 20px; }
@@ -1024,7 +1024,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         position: absolute;
         right: -26px;
         bottom: -1px;
-        background: url(/img/un1.png) no-repeat; }
+        background: url(../img/un1.png) no-repeat; }
   .plug__flex {
     align-items: center;
     margin-top: 145px;
@@ -1341,7 +1341,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     content: "";
     position: absolute;
     right: -8px;
-    background: url(/img/pol.svg) no-repeat !important;
+    background: url(../img/pol.svg) no-repeat !important;
     width: 12px;
     left: inherit;
     height: 11px;
@@ -1355,7 +1355,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     content: "";
     position: absolute;
     right: -8px;
-    background: url(/img/pol.svg) no-repeat !important;
+    background: url(../img/pol.svg) no-repeat !important;
     width: 12px;
     left: inherit;
     height: 11px;
@@ -1480,7 +1480,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     letter-spacing: 0.16px;
     opacity: 0.4; }
   .main .selectCF .arrowCF {
-    background: url(/img/pol.svg) no-repeat !important;
+    background: url(../img/pol.svg) no-repeat !important;
     width: 12px;
     height: 9px;
     text-align: center;
@@ -2611,7 +2611,7 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 0.16px; }
 
 .order .selectCF .arrowCF {
-  background: url(/img/opt.svg) no-repeat !important;
+  background: url(../img/opt.svg) no-repeat !important;
   width: 20px;
   height: 14px;
   text-align: center;
@@ -2716,7 +2716,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     width: 876px;
     height: 2px;
-    background: url(/img/line.svg) no-repeat;
+    background: url(../img/line.svg) no-repeat;
     position: absolute;
     bottom: 52px;
     left: 151px;
@@ -2878,7 +2878,7 @@ input[type=number]::-webkit-outer-spin-button {
     content: "";
     position: absolute;
     z-index: 2;
-    background: url(/img/union.png) center center no-repeat;
+    background: url(../img/union.png) center center no-repeat;
     bottom: 29px;
     right: 129px;
     width: 20px;
@@ -2908,10 +2908,10 @@ input[type=number]::-webkit-outer-spin-button {
   width: 25px;
   height: 19px;
   bottom: 14px;
-  background: url(/img/view.svg) center center no-repeat; }
+  background: url(../img/view.svg) center center no-repeat; }
 
 .prof__form .password-control.view, .prof__form .password-control2.view, .prof__form .password-control3.view {
-  background: url(/img/no-view.svg) center center no-repeat;
+  background: url(../img/no-view.svg) center center no-repeat;
   right: 18px;
   width: 25px;
   height: 19px;
@@ -3263,9 +3263,9 @@ input[type=number]::-webkit-outer-spin-button {
       background: rgba(40, 34, 34, 0.03);
       color: black; }
     .reg .reg__enter .password-control3 {
-      background: url(/img/view2.svg) center center no-repeat; }
+      background: url(../img/view2.svg) center center no-repeat; }
     .reg .reg__enter .password-control3.view {
-      background: url(/img/no-view2.svg) center center no-repeat; }
+      background: url(../img/no-view2.svg) center center no-repeat; }
   .reg__pass {
     color: #282622;
     opacity: 0.6;
@@ -3687,14 +3687,14 @@ input[type=range]::-webkit-slider-thumb {
   pointer-events: all;
   width: 15px;
   height: 25px;
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   cursor: pointer;
   border: none;
   top: 6px;
   position: relative; }
 
 input[type=range]:nth-child(2)::-webkit-slider-thumb {
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   position: relative;
   top: 5px;
   height: 25px; }
@@ -3704,7 +3704,7 @@ input[type=range]::-moz-range-thumb {
   pointer-events: all;
   width: 15px;
   height: 25px;
-  background: url(/img/range.svg) no-repeat center 0px !important;
+  background: url(../img/range.svg) no-repeat center 0px !important;
   cursor: pointer; }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -3816,7 +3816,7 @@ input[type="number"] {
 .order__promo.error input {
   border: 1px solid #F00 !important;
   color: #F00;
-  background: url(/img/none.svg) no-repeat 97% 53%;
+  background: url(../img/none.svg) no-repeat 97% 53%;
   background-color: white; }
 
 .order__promo.error:after {
@@ -3836,7 +3836,7 @@ input[type="number"] {
 .order__promo.check input {
   border: 1px solid #53E559 !important;
   color: #53E559;
-  background: url(/img/yes.svg) no-repeat 97% 53%;
+  background: url(../img/yes.svg) no-repeat 97% 53%;
   background-color: white; }
 
 .enter .ww {
@@ -3912,7 +3912,7 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/img/bur.svg) no-repeat center center; }
+    background: url(../img/bur.svg) no-repeat center center; }
   .menu-btn span {
     width: 16px;
     height: 2px;
@@ -4027,7 +4027,7 @@ input[type="number"] {
   .menu-btn.active {
     overflow: visible;
     position: fixed;
-    background: url(/img/close2.svg) no-repeat center center;
+    background: url(../img/close2.svg) no-repeat center center;
     top: 25px;
     left: 45%; }
   .menu-btn.active span:nth-of-type(1) {
@@ -4461,7 +4461,7 @@ input[type="number"] {
   .info__item:nth-child(n+2) .info__name {
     min-height: inherit; }
   .info__box:after {
-    background: url(/img/line2.svg) no-repeat;
+    background: url(../img/line2.svg) no-repeat;
     width: 2px;
     bottom: 52px;
     left: 45px;
@@ -4538,7 +4538,7 @@ input[type="number"] {
     border: none;
     width: 35px;
     height: 35px;
-    background: url(/img/close3.svg) no-repeat center center;
+    background: url(../img/close3.svg) no-repeat center center;
     right: 5%; }
     .menu-btn4.active p, .menu-btn4.active .svg {
       display: none; }
